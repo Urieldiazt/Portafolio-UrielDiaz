@@ -29,7 +29,7 @@ function scrollnav(){
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', function(e){
             e.preventDefault();
-
+            console.log(enlace);
             const secciones = e.target.attributes.href.value;
             const seccion = document.querySelector(secciones);
             seccion.scrollIntoView({behavior: 'smooth'});
